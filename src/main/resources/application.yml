@@ -1,0 +1,6 @@
+spring:
+  kafka:
+    bootstrap-servers: kafka.artivisi.id:9092
+    consumer:
+      group-id: belajar
+      auto-offset-reset: earliest
