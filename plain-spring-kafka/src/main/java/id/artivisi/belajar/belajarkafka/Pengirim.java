@@ -16,6 +16,6 @@ public class Pengirim {
 
     public void kirim(String pesan){
         logger.info("Mengirim pesan [{}] ke topic [{}]", pesan, topic);
-        kafkaTemplate.send("belajarkafka", pesan);
+        kafkaTemplate.send(topic, pesan);
     }
 }
